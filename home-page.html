@@ -1,0 +1,548 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .full-screen-bg {
+        position: relative;
+        background-image: url("assets/children-bg.jpg"); /* Path to your image */
+        background-size: cover;
+        background-position: center;
+        height: 95vh;
+      }
+      .full-screen-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .video-screen-bg {
+        position: relative;
+        background-image: url("assets/children-bg.jpg"); /* Path to your image */
+        background-size: cover;
+        background-position: center;
+        width: 52vh;
+        height: 65vh;
+      }
+      .video-screen-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .option-screen-bg {
+        position: relative;
+        background-image: url("assets/children-bg.jpg"); /* Path to your image */
+        background-size: cover;
+        background-position: center;
+        height: 45vh;
+        width: 50vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .option-screen-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .event-screen-bg {
+        position: relative;
+        background-image: url("assets/children-bg.jpg"); /* Path to your image */
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 175vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .event-screen-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .video-img {
+        width: 25px;
+        height: auto;
+        border: 1px solid transparent; /* Add initial border */
+        transition: border-color 0.3s; /* Add transition for smooth effect */
+      }
+
+      .service-img {
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent; /* Add initial border */
+        transition: border-color 0.3s; /* Add transition for smooth effect */
+      }
+
+      .video-img:hover {
+        border-color: lightgrey; /* Change border color on hover */
+      }
+
+      .bottom-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 5rem;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar links -->
+    <nav class="navbar navbar-expand-md border-bottom border-0 shadow-sm">
+      <div class="container-xxl">
+        <strong class="fs-4">Largerthan<i>i</i></strong>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav fw-medium">
+            <li class="nav-item">
+              <a href="#Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#whatwedo" class="nav-link">What We Do</a>
+            </li>
+            <li class="nav-item">
+              <a href="#media" class="nav-link">Media</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="btn px-4 bg-black text-white fw-bold">Donate</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- section part -->
+    <div class="full-screen-bg d-flex align-items-end">
+      <div class="container position-relative h-100">
+        <div class="text-white fw-semibold py-5 px-2 display-2">
+          Inclusive care for <br />children with special <br />needs
+        </div>
+        <div>
+          <span>
+            <button class="btn btn-primary text-black bg-light border-0">
+              What we do
+            </button>
+          </span>
+          <span>
+            <button
+              class="btn btn-primary text-white border-0 bg-transparent mx-3"
+            >
+              <img
+                class="video-img mx-1"
+                src="assets/video-icon.png"
+                alt="video"
+              />
+              Play Video
+            </button>
+          </span>
+        </div>
+        <div class="lead text-white bottom-content row">
+          <span class="col-3">230 children under our care</span>
+          <span class="col-6"><hr /></span>
+          <span class="col-3">58 donation collected</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- next section -->
+
+    <div class="container py-5 my-5">
+      <div class="row">
+        <div class="col-1 my-4"><hr /></div>
+        <div class="col-5 my-4">
+          <p class="text-uppercase fw-medium">know about us</p>
+          <h1>We provide a place for children with special needs</h1>
+          <p class="py-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque et
+            quos mollitia consequatur explicabo? Hic?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint
+            asperiores corporis consequatur, qui maiores saepe similique dicta?
+            Quos voluptatibus numquam temporibus quis optio neque minus fugiat,
+            quasi hic ratione quo, at saepe expedita illo! Mollitia modi dolor
+            minima vitae!
+          </p>
+
+          <button
+            class="btn btn-primary bg-warning border-0 text-black px-3 my-4"
+          >
+            Learn more
+          </button>
+        </div>
+        <div class="col-5 order-last order-md-last">
+          <div
+            class="video-screen-bg mx-5 d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="position-relative"
+              src="assets/video-play-32.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row my-3">
+          <span class="col-2 text-uppercase">our supporters</span>
+          <span class="col-8"><hr /></span>
+        </div>
+        <div class="row text-muted">
+          <p class="col">&iocy;; logoiosum</p>
+          <p class="col">&acd; logoiosum</p>
+          <p class="col">&Agrave; logoiosum</p>
+          <p class="col">logoiosum</p>
+          <p class="col">logoiosum</p>
+          <p class="col">logoiosum</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- service section -->
+    <div class="bg-warning-subtle py-5">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-1"><hr /></div>
+          <div class="col-5">
+            <p class="text-uppercase fw-medium">what we do</p>
+            <h1>Some Services we provide for our children</h1>
+            <p class="fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              iure ducimus quis beatae natus sequi soluta veritatis voluptates
+              nam non.
+            </p>
+            <div class="container border-start">
+              <div class="d-flex">
+                <img
+                  class="service-img"
+                  src="assets/building.png"
+                  alt="building"
+                />
+                <div class="mx-4">
+                  <h3>Family support</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo illum fuga sit.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <img
+                  class="service-img"
+                  src="assets/health-care.png"
+                  alt="building"
+                />
+                <div class="mx-4">
+                  <h3>Health benefits</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo illum fuga sit.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <img
+                  class="service-img"
+                  src="assets/student.png"
+                  alt="building"
+                />
+                <div class="mx-4">
+                  <h3>Scholarship</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo illum fuga sit.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <img class="service-img" src="assets/wolf.png" alt="building" />
+                <div class="mx-4">
+                  <h3>Therapy</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo illum fuga sit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div
+              class="video-screen-bg mx-5 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section project -->
+    <div class="container my-5 py-4">
+      <div class="row">
+        <div class="col-1"><hr /></div>
+        <div class="col-5">
+          <p class="text-uppercase fw-medium">project we have done</p>
+          <h2>
+            We are creating a place where children with special needs can thrive
+          </h2>
+        </div>
+      </div>
+      <div class="d-flex mx-5 my-5">
+        <div class="option-screen-bg mx-2">
+          <div class="container position-relative text-white p-5">
+            <h3>Mission smile 1k: Outdoor charity</h3>
+            <p class="my-2 fw-light">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis, eaque. Lorem ipsum dolor sit amet.
+            </p>
+
+            <button
+              class="btn btn-primary bg-white text-black border-0 px-4 my-5"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+
+        <div class="option-screen-bg mx-2">
+          <div class="container position-relative text-white p-5">
+            <h3>Weekly excursion</h3>
+            <br />
+            <p class="my-2 fw-light">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis, eaque. Lorem ipsum dolor sit amet.
+            </p>
+
+            <button
+              class="btn btn-primary bg-white text-black border-0 px-4 my-5"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+
+        <div class="option-screen-bg mx-2">
+          <div class="container position-relative text-white p-5">
+            <h3>Monthly public awareness</h3>
+            <p class="my-2 fw-light">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reiciendis, eaque. Lorem ipsum dolor sit amet.
+            </p>
+
+            <button
+              class="btn btn-primary bg-white text-black border-0 px-4 my-5"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- statistics section  -->
+    <div class="bg-black">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-6 my-5 py-5">
+            <h1>
+              How we spend your<br />
+              donation and where it goes
+            </h1>
+            <p class="text-light-emphasis">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Dignissimos quas quisquam error? Lorem ipsum dolor sit amet.
+            </p>
+            <div class="d-flex flex-wrap gap-4">
+              <div><span></span>40% child care home</div>
+              <div>35% cleanliness program</div>
+              <div>10% helping people</div>
+              <div>10% excursion</div>
+              <div>5% feeding the poor</div>
+            </div>
+          </div>
+          <div
+            class="col-4 justify-content-center align-content-center mx-5 px-5"
+          >
+            <img
+              class="px-5 mx-5"
+              src="assets/dummy-piechart.png"
+              alt="piechart"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- event section  -->
+    <div class="my-5 py-3">
+      <div class="container">
+        <div class="event-screen-bg d-flex">
+          <div class="container position-absolute text-white text-center">
+            <div class="">
+              <h1>
+                You can contribute to provide a place <br />for children with
+                special needs!
+              </h1>
+              <div class="my-5">
+                <span
+                  ><button
+                    class="btn btn-primary bg-warning border-0 text-black px-4"
+                  >
+                    Join as volunteer
+                  </button></span
+                >
+                <span
+                  ><button
+                    class="btn btn-primary bg-white border-0 text-black mx-4"
+                  >
+                    Donate
+                  </button></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="my-5">Our Events</h3>
+          <div class="row gap-3">
+            <div class="col bg-warning rounded-3">
+              <div class="container my-3">
+                <div class="row">
+                  <div class="col-1">
+                    <h3>13</h3>
+                    APR
+                  </div>
+                  <div class="col-8">
+                    <p class="text-uppercase fw-medium m-0">next events</p>
+                    <h5>A day with our wonderful children</h5>
+                  </div>
+                  <div
+                    class="col-1 d-flex justify-content-center align-items-center"
+                  >
+                    <div class="bg-white rounded-5">
+                      <div class="fs-2">&rArr;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col bg-warning rounded-3">
+              <div class="container my-3">
+                <div class="row">
+                  <div class="col-1">
+                    <h3>13</h3>
+                    APR
+                  </div>
+                  <div class="col-8">
+                    <p class="text-uppercase fw-medium m-0">next events</p>
+                    <h5>A day with our wonderful children</h5>
+                  </div>
+                  <div
+                    class="col-1 d-flex justify-content-center align-items-center"
+                  >
+                    <div class="bg-white rounded-5">
+                      <div class="fs-2">&rArr;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-black text-white p-5">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-2">
+            <h2>largerthan<i>i</i></h2>
+          </div>
+          <div class="col-3 mx-5">
+            <div class="row">
+              <div class="col text-light-emphasis">
+                <p class="text-white">Home</p>
+                <p>About us</p>
+                <p>Team</p>
+                <p>What we do</p>
+                <p>Contact</p>
+              </div>
+              <div class="col text-light-emphasis">
+                <p class="text-white">More</p>
+                <p>Projects</p>
+                <p>Events</p>
+                <p>Donate</p>
+                <p>Blog</p>
+              </div>
+              <div class="col text-light-emphasis">
+                <p class="text-white">Connect</p>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Linkdln</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 justify-content-end w-50">
+            <h1>Subscribe to get latest updates</h1>
+            <div class="row pt-5">
+              <div class="col-6 p-0">
+                <input
+                  class="px-4 py-3 w-100 rounded-1 bg-black"
+                  type="text"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="col-4 p-0">
+                <button
+                  class="btn btn-primary bg-white text-black rounded-1 border-0 px-4 py-3"
+                >
+                  <strong> Subscribe</strong>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
